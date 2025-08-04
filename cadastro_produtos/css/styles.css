@@ -1,0 +1,163 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #004cda;
+    padding-bottom: 500px;
+}
+
+div{
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #333;
+}
+
+p, label {
+    color: #444;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    display: block;
+    width: 400px;
+    margin-top: 10px;
+}
+
+#desc {
+    height: 130px;
+}
+
+/* header */
+
+.header {
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    background-color: #333;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.header h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 0;
+    padding-left: 30px;
+}
+
+/* Form-container */
+.form-container {
+    background-color: #fdfdfd;
+    width: 70%;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-header {
+    width: 100%;
+    border-bottom: 2px solid #004cda;
+    padding: 10px;
+}
+
+.form-header p {
+    font-weight: bold;
+}
+
+.form-body {
+    width: 100%;
+    background-color: #fdfdfd;
+    margin: 0 auto;
+    position: relative;
+    min-height: 500px;
+}
+
+/* side boxes */
+.left-side-box {
+    position: absolute;
+    left: 0;
+    height: 500px;
+}
+
+.right-side-box{
+    position: absolute;
+    right: 0;
+    height: 500px;
+}
+
+.box-input {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.box-label {
+    font-weight: bold;
+}
+
+.radio-box,
+.checkbox-container {
+    margin-left:10px ;
+    padding-left: 10px;
+}
+
+.radio,
+.checkbox {
+    margin: 10px;
+}
+
+
+
+.btn-submit {
+    display: block;
+    width: 60%;
+    height: 80px;
+    margin: 10px;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    background-color: #00b193;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover{
+    background-color: #ddd;
+    color: #00b193;
+    border: 1px solid #5bcece;
+    transition: 0.3s;
+}
+
+.required{
+    color: #4100da;
+    font-weight: bold;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>>>cbjk_genesis_marketplace//</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Cadastre seu produto para venda</p>
+            </div>
+            <div class="form-body">
+                <form>
+                    <div class="left-side-box">
+                        <!-- Fotos -->
+                        <div class="box-input">
+                            <p>Fotos do produto <span class="required">*</span></p>
+                            <input
+                                type="file"
+                                multiple
+                                accept="image/*"
+                                name="images"
+                                id="images"
+                                required
+                                
+                            >
+                        </div>
+                        <!-- Nome do produto -->
+                        <div class="box-input">
+                            <label for="product_name">
+                                Nome do produto <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text"
+                                name="product_name"
+                                id="product_name"
+                                class="block"
+                                placeholder="Máximo de 30 caracteres."
+                                minlength="1"
+                                maxlength="30"
+                                required
+                            />
+                        </div>
+                        <!-- Preço -->
+                        <div class="box-input">
+                            <label for="price">
+                                Preço <span class="required">*</span>
+                            </label>
+                            <input
+                                type="number"
+                                name="price"
+                                id="price"
+                                class="block"
+                                placeholder="Defina um preço"
+                                required
+                            />
+                        </div>
+                        <!-- Descrição -->
+                        <div class="box-input">
+                            <label for="desc">
+                                Descrição <span class="required">*</span>
+                            </label>
+                            <textarea 
+                            name="desc" 
+                            id="desc"
+                            class="block"
+                            placeholder="Máximo de 1200 caracteres."
+                            minlength="1"
+                            maxlength="1200"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="right-side-box">
+                        <!-- Categoria -->
+                        <div class="box-input">
+                            <label for="category">
+                                Categoria <span class="required">*</span>
+                            </label>
+                            <select name="category" id="category">
+                                <option value="roupas_acessorios">Roupas e acessórios</option>
+                                <option value="eletronicos_acessorios">Eletrônicos e acessórios</option>
+                                <option value="tabacaria">Tabacaria/artigos para fumo</option>
+                                <option value="equipamento_musical">Equipamento musical</option>
+                            </select>
+                        </div>
+                        <!-- Estado do produto -->
+                        <div class="radio-box">
+                            <label for="conservation" class="box-label">Estado do produto <span class="required">*</span></label>
+                            <div class="radio">
+                                <input type="radio" name="conservation" value="new" id="new" required>
+                                <label for="new">Novo</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="conservation" value="nearly_new" id="nearly_new">
+                                <label for="nearly_new">Seminovo</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="conservation" value="old_good" id="old_good">
+                                <label for="old_good">Usado - em boas condições</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="conservation" value="old" id="old">
+                                <label for="old">Usado</label>
+                            </div>
+                        </div>
+                        <!-- Opções de venda -->
+                        <div class="checkbox-container">
+                            <label for="selling-options" class="box-label">Opções de venda</label>
+                            <div class="checkbox">
+                                <input type="checkbox" name="selling_options[]" value="paid_boost" id="paid_boost">
+                                <label for="paid_boost">Impulsionar anúncio</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="selling_options[]" value="fast_shipping" id="fast_shipping">
+                                <label for="fast_shipping">Oferecer entrega rápida</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="selling_options[]" value="ai_cs_assistant" id="ai_cs_assistant">
+                                <label for="ai_cs_assistant">IA Assistente de atendimento</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Anunciar produto" class="btn-submit"> 
+                    </div>
+                                      
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
