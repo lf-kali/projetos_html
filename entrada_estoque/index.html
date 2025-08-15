@@ -7,130 +7,205 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h3>>>cbjk_genesis_product_storage//</h3>
-    </div>
-    <div class="body">
-        <div class="form-header">
-            <p>Registrar dados do produto</p>
+    <div class="container">        
+        <div class="header">
+            <h3>>>cbjk_genesis_product_storage//</h3>
         </div>
-        <div class="form-body">
-            <form>
-                <!-- Nome do produto -->
-                <div class="box-input">
-                    <label for="product_name">
-                        Nome do produto <span class="required">*</span>
-                    </label>
-                    <input 
-                        type="text" 
-                        name="product_name" 
-                        id="product_name" 
-                        placeholder="Máximo de 50 caracteres." 
-                        maxlength="50" 
-                        required
-                    />
-                </div>
-                <!-- ID do produto -->
-                <div class="box-input">
-                    <label for="product_id">
-                        ID do produto <span class="required">*</span>
-                    </label>
-                    <input 
-                        type="text" 
-                        name="product_id" 
-                        id="product_id"
-                        required
-                    />
-                </div>
-                <!-- Código de barras -->
-                <div class="box-input">
-                    <label for="bar_code">
-                        Código de barras <span class="required">*</span>
-                    </label>
-                    <input 
-                        type="number" 
-                        name="bar_code"
-                        id="bar_code"
-                        required
-                    />
-                </div>
-                <!-- Preço unitário -->
-                <div class="box-input">
-                    <label for="unitarian_price">
-                        Preço unitário <span class="required">*</span>
-                    </label>
-                    <input 
-                        type="number" 
-                        name="unitarian_price"
-                        id="unitarian_price"
-                        required
-                    />
-                </div>
-                <!-- Fotos do produto -->
-                <div class="box-input">
-                    <label for="product_pictures">
-                        Fotos do produto <span class="required">*</span>
-                    </label>
-                    <input 
-                        type="file" 
-                        name="product_pictures"
-                        accept="images/.png"
-                        id="product_pictures"
-                        required
-                    />
-                </div>
-                <!-- dimensões e peso -->
-                <fieldset>
-                    <legend>
-                        Dimensões e peso
-                    </legend>
-                    <!-- peso -->
+        <div class="form-container">
+            <div class="form-header">
+                <p>Registrar dados do produto</p>
+            </div>
+            <div class="form-body">
+                <form>
+                    <div class="upside-half">
+                            <div class="left-side-box">
+                                
+                            <!-- Nome do produto -->
+                            <div class="box-input">
+                                <label for="product_name">
+                                    Nome do produto <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    name="product_name" 
+                                    id="product_name" 
+                                    placeholder="Máximo de 50 caracteres." 
+                                    maxlength="50" 
+                                    required
+                                />
+                            </div>
+                            <!-- ID do produto -->
+                            <div class="box-input">
+                                <label for="product_id">
+                                    ID do produto <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    name="product_id" 
+                                    id="product_id"
+                                    required
+                                />
+                            </div>
+                            <!-- Código de barras -->
+                            <div class="box-input">
+                                <label for="bar_code">
+                                    Código de barras <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="number" 
+                                    name="bar_code"
+                                    id="bar_code"
+                                    required
+                                />
+                            </div>
+                            <!-- Preço unitário -->
+                            <div class="box-input">
+                                <label for="unitarian_price">
+                                    Preço unitário <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="number" 
+                                    name="unitarian_price"
+                                    id="unitarian_price"
+                                    required
+                                />
+                            </div>
+                            <!-- Fotos do produto -->
+                            <div class="box-input">
+                                <label for="product_pictures">
+                                    Fotos do produto <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="file" 
+                                    name="product_pictures"
+                                    accept="images/.png"
+                                    id="product_pictures"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="right-side-box">
+                                <!-- dimensões e peso -->
+                            <fieldset>
+                                <legend>
+                                    Dimensões e peso
+                                </legend>
+                                <!-- peso -->
+                                <div class="box-input">
+                                    <label for="product_weight">
+                                        Peso(kg) <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number" 
+                                        name="product_weight" 
+                                        id="product_weight"
+                                        required
+                                    />
+                                </div>
+                                <div class="box-input">
+                                    <label for="product_height">
+                                        Altura(m) <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number" 
+                                        name="product_height"
+                                        id="product_height"
+                                        required
+                                    />
+                                </div>
+                                <div class="box-input">
+                                    <label for="product_width">
+                                        Largura(cm) <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number"
+                                        name="product_width" 
+                                        id="product_width"
+                                        required
+                                    />
+                                </div>
+                                <div class="box-input">
+                                    <label for="product_length">
+                                        Comprimento(cm) <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number"
+                                        name="product_length" 
+                                        id="product_length"
+                                        required
+                                    />
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!-- Categoria -->
                     <div class="box-input">
-                        <label for="product_weight">
-                            Peso(kg) <span class="required">*</span>
+                        <label for="category">
+                            Categoria
                         </label>
-                        <input 
-                            type="number" 
-                            name="product_weight" 
-                            id="product_weight"
-                            required
-                        />
+                        <select name="category" id="category" required>
+                            <option value="tech">Tecnologia e Gadgets</option>
+                            <option value="streetwear">Moda Urbana</option>
+                            <option value="smart_home">Casa Inteligente</option>
+                            <option value="pet_shop">Pet Shop</option>
+                            <option value="beauty">Beleza</option>
+                            <option value="fitness">Fitness</option>
+                            <option value="books">Livros</option>
+                            <option value="collectibles">Colecionáveis</option>
+                            <option value="kitchen">Cozinha</option>
+                            <option value="camping">Camping</option>
+                        </select>
                     </div>
                     <div class="box-input">
-                        <label for="product_height">
-                            Altura(m) <span class="required">*</span>
-                        </label>
-                        <input 
-                            type="number" 
-                            name="product_height"
-                            id="product_height"
-                            required
-                        />
-                    </div>
-                    <div class="box-input">
-                        <label for="product_width">
-                            Largura(cm) <span class="required">*</span>
+                        <label for="stored_amount">
+                            Quantidade em estoque <span class="required">*</span>
                         </label>
                         <input 
                             type="number"
-                            name="product_width" 
-                            id="product_width"
+                            name="stored_amount" 
+                            id="stored_amount"
                             required
-                        />
+                        />                    
                     </div>
+                    <!-- Descrição -->
                     <div class="box-input">
-                        <label for="product_length">
-                            Comprimento(cm) <span class="required">*</span>
+                        <label for="desc">
+                            Descrição do produto <span class="required">*</span>
                         </label>
-                        <input 
-                            type="number"
-                            name="product_length" 
-                            id="product_length"
+                        <textarea 
+                            name="desc" 
+                            id="desc"
                             required
-                        />
+                            maxlength="1000"
+                        ></textarea>
                     </div>
-                </fieldset>
-            </form>
+                    <div class="radio-container">
+                        <label for="product_status">
+                            Status do produto <span class="required">*</span>
+                        </label>
+                        <div class="radio">
+                            <input 
+                                type="radio"
+                                name="product_status"
+                                value="active"
+                                id="active"
+                                required
+                            />
+                            <label for="active">Ativo</label>
+                        </div>
+                        <div class="radio">
+                            <input 
+                                type="radio"
+                                name="product_status"
+                                value="inactive"
+                                id="inactive"
+                            />
+                            <label for="inactive">Inativo</label>
+                        </div>
+                        <input type="submit" value="Registrar" class="send-btn">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
