@@ -306,6 +306,7 @@ nav {
 .cta-btn:hover {
     background-color: #0e0e0e;
     color: #f7104a;
+    border: 1px solid #f7104a;
     box-shadow: 0px 0px 10px #ec0b43;
 }
 
@@ -315,6 +316,10 @@ nav {
     margin: 20px 0;
     padding: 5rem 0 2rem 0;
     background-color: #0e0e0e;
+}
+
+.promo-container h3 {
+    font-weight: 400;
 }
 
 .promo-container h3,
@@ -423,4 +428,26 @@ input[type="submit"]:hover {
     color: #32e875;
     border: solid 1px #32e875;
     box-shadow: #32e875 0 5px 15px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:1200px) {
+    .slide-text-container h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .cta-container {
+        width: 100%;
+        padding: 12.5px;
+        margin: 25px auto 0;
+    }
+    .cta {
+        margin: 0 10px;
+    }
+
+    .promo-text-container {
+        padding: 0 80px;
+    } 
 }
